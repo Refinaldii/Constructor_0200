@@ -19,6 +19,28 @@ Mahasiswa::Mahasiswa() {
     nim = 0;
     nama = "";
 }
+
+Mahasiswa::Mahasiswa(int iNim) {
+    nim = iNim;
+}
+
+Mahasiswa::Mahasiswa(string iNama) {
+    nim = 0;
+    nama = iNama;
+ }
+
+Mahasiswa::Mahasiswa(int iNim, string iNama) {
+    nim = iNim;
+    nama = iNama;
+}
+
+void Mahasiswa::cetak() {
+    cout << endl << "Nim = " << nim << endl;
+    cout << "Nama = " << nama << endl;
+
+}
+
+
 int main()
 {
     std::cout << "Hello World!\n";
