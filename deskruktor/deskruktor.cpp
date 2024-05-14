@@ -40,6 +40,10 @@ void angka::isiData() {
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    angka belajarcpp(3);
+    angka* ptrBelajarcpp = new angka(5);
+    delete ptrBelajarcpp;
+
+    return 0;
 }
 
