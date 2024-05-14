@@ -15,7 +15,11 @@ public:
     Mahasiswa(string pnama) :nama(pnama) {
         setID();
     }
+
+    
+
 };
+int Mahasiswa::nim = 100;
 int main()
 {
     std::cout << "Hello World!\n";
