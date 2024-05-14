@@ -3,26 +3,35 @@
 using namespace std;
 
 class Mahasiswa {
+
+    
+
 private :
     int nim;
     string nama;
 public:
     Mahasiswa();
-    Mahasiswa(int);
+    Mahasiswa(int F) {
+        nim = F;
+    }
     Mahasiswa(string);
     Mahasiswa(int iNim, string iNama);
     void cetak();
 
+    
+
+
+
 };
+
+
 
 Mahasiswa::Mahasiswa() {
     nim = 0;
     nama = "";
 }
 
-Mahasiswa::Mahasiswa(int iNim) {
-    nim = iNim;
-}
+
 
 Mahasiswa::Mahasiswa(string iNama) {
     nim = 0;
@@ -43,6 +52,14 @@ void Mahasiswa::cetak() {
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Mahasiswa mhs1;
+    Mahasiswa mhs2(20);
+    Mahasiswa mhs3("Indra");
+    Mahasiswa mhs4(30, "Fauzan");
+
+    mhs1.cetak();
+    mhs2.cetak();
+    mhs3.cetak();
+    mhs4.cetak();
 }
 
