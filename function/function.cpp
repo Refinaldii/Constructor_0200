@@ -4,6 +4,8 @@ using namespace std;
 
 class Mahasiswa {
 private:
+    static int nim;
+public:
 };
 int main()
 {
